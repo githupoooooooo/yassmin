@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    
+}
+a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (max-width:480px) {
+    a{
+        background-color: pink;
+    }    
+    }
+    @media screen and (min-width:481px) and (max-width){
+        .media{
+            background-color: orange;
+        }
+        
+    }
+    @media screen and (min-width : 769) and(max-width:1024){
+        .media{
+            background-color: aquamarine;
+        }
+        
+    }
+    .animation{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        animation: y 3s infinite;
+    }
+    @keyframes y{
+        25%{
+            margin-left: 500px;
+            background-color: green;
+        }
+        50%{
+            margin-top: 300px;
+            background-color: orange;
+        }
+        75%{
+            margin-left: 0;
+            background-color: blue;
+        }
+        100%{
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+    .overflow{
+        background-color: red;
+        width: 400px;
+        height: 100px;
+        overflow: scroll;
+    }
